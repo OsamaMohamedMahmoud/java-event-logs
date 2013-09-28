@@ -1,0 +1,175 @@
+<?xml version="1.0"?>
+<!-- Generated using Flame-Ware Solutions XML-2-XSD v2.0 at http://www.flame-ware.com/Products/XML-2-XSD/ -->
+<xs:schema id="graphDocument" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="graphDocument" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="group" minOccurs="0" maxOccurs="unbounded" >
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="properties">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="p" nillable="true" minOccurs="0" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:simpleContent msdata:ColumnName="p_Text" msdata:Ordinal="1">
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute name="name" type="xs:string" />
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="method" minOccurs="0" maxOccurs="1">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="bytecodes" type="xs:string" minOccurs="0" msdata:Ordinal="0" />
+                                    </xs:sequence>
+                                    <xs:attribute name="bci" type="xs:string" />
+                                    <xs:attribute name="shortName" type="xs:string" />
+                                    <xs:attribute name="name" type="xs:string" />
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="graph" minOccurs="0" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="properties">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="p" nillable="true" minOccurs="0" maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                            <xs:simpleContent msdata:ColumnName="p_Text" msdata:Ordinal="1">
+                                                                <xs:extension base="xs:string">
+                                                                    <xs:attribute name="name" type="xs:string" />
+                                                                </xs:extension>
+                                                            </xs:simpleContent>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="nodes" minOccurs="0" maxOccurs="unbounded" >
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="removeNode" minOccurs="0" maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                            <xs:attribute name="id" type="xs:string" />
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="node" minOccurs="0" maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="properties">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="p" nillable="true" minOccurs="0" maxOccurs="unbounded">
+                                                                                <xs:complexType>
+                                                                                    <xs:simpleContent msdata:ColumnName="p_Text" msdata:Ordinal="1">
+                                                                                        <xs:extension base="xs:string">
+                                                                                            <xs:attribute name="name" type="xs:string" />
+                                                                                        </xs:extension>
+                                                                                    </xs:simpleContent>
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                            <xs:attribute name="id" type="xs:string" />
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="edges" minOccurs="0" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="removeEdge" minOccurs="0" maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                            <xs:attribute name="to" type="xs:string" />
+                                                            <xs:attribute name="index" type="xs:string" />
+                                                            <xs:attribute name="from" type="xs:string" />
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="edge" minOccurs="0" maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                            <xs:attribute name="to" type="xs:string" />
+                                                            <xs:attribute name="index" type="xs:string" />
+                                                            <xs:attribute name="from" type="xs:string" />
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="controlFlow" minOccurs="0" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="block" minOccurs="0" maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="successors" minOccurs="0" maxOccurs="unbounded">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="successor" minOccurs="0" maxOccurs="unbounded">
+                                                                                <xs:complexType>
+                                                                                    <xs:attribute name="name" type="xs:string" />
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="nodes" minOccurs="0" maxOccurs="unbounded" >
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="removeNode" minOccurs="0" maxOccurs="unbounded">
+                                                                                <xs:complexType>
+                                                                                    <xs:attribute name="id" type="xs:string" />
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                            <xs:element name="node" minOccurs="0" maxOccurs="unbounded">
+                                                                                <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                        <xs:element name="properties">
+                                                                                            <xs:complexType>
+                                                                                                <xs:sequence>
+                                                                                                    <xs:element name="p" nillable="true" minOccurs="0" maxOccurs="unbounded">
+                                                                                                        <xs:complexType>
+                                                                                                            <xs:simpleContent msdata:ColumnName="p_Text" msdata:Ordinal="1">
+                                                                                                                <xs:extension base="xs:string">
+                                                                                                                    <xs:attribute name="name" type="xs:string" />
+                                                                                                                </xs:extension>
+                                                                                                            </xs:simpleContent>
+                                                                                                        </xs:complexType>
+                                                                                                    </xs:element>
+                                                                                                </xs:sequence>
+                                                                                            </xs:complexType>
+                                                                                        </xs:element>
+                                                                                    </xs:sequence>
+                                                                                    <xs:attribute name="id" type="xs:string" />
+                                                                                </xs:complexType>
+                                                                            </xs:element>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                            <xs:attribute name="name" type="xs:string" />
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+									<xs:attribute name="name" type="xs:string" />
+								<xs:attribute name="tstamp" type="xs:decimal"/>
+								</xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="difference" type="xs:string" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

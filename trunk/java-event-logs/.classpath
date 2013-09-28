@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="libs/cchotspotlog.jar"/>
+	<classpathentry kind="lib" path="libs/chotspotlog.jar"/>
+	<classpathentry kind="lib" path="libs/hotspotlog.jar"/>
+	<classpathentry kind="lib" path="libs/igv.jar"/>
+	<classpathentry kind="lib" path="libs/jp2.jar"/>
+	<classpathentry kind="lib" path="libs/jsr173_1.0_api.jar"/>
+	<classpathentry kind="lib" path="libs/oigv.jar"/>
+	<classpathentry kind="lib" path="libs/resolver.jar"/>
+	<classpathentry kind="lib" path="libs/WorkflowLog.jar"/>
+	<classpathentry kind="lib" path="libs/xbean_xpath.jar"/>
+	<classpathentry kind="lib" path="libs/xbean.jar"/>
+	<classpathentry kind="lib" path="libs/xes.jar"/>
+	<classpathentry kind="lib" path="libs/xesext.jar"/>
+	<classpathentry kind="lib" path="libs/xmlbeans-qname.jar"/>
+	<classpathentry kind="lib" path="libs/xmlpublic.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
