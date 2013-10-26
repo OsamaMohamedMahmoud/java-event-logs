@@ -6,18 +6,23 @@ import jvm.pm.tool.logs.LogMiner;
 import jvm.pm.tool.logs.LogMiner.LogTypes;
 
 public class MainMiner {
+	
+	//for test only, to be removed
+	static String[] opt = {"-igv","./input/idg_fop(small)_level2.xml","./output/"};
 
 	public static void usage() {
 		System.out.println("Usage: java-event-logs [ -logc ] [ -igv ] [ -jp2 ] inputFile outputFolder");
 		System.out.println("  -logc	:  input file from jvm hotspot LogCompilation");
 		System.out.println("  -igv	:  input file from jvm ideal graph visualizer");
 		System.out.println("  -jp2	:  input file from jp2 tool");
-		System.exit(0);
+		//System.exit(0);
 	}
 
 	public static void main(String[] args) {
 		if (args.length != 3) {
 			usage();
+			//for test only, to be removed
+			args = opt;
 		}
 		String type = args[0];
 		String inputFile = args[1];

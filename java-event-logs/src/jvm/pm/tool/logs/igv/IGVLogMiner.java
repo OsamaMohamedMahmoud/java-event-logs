@@ -98,7 +98,7 @@ public class IGVLogMiner extends LogMiner {
 				instance.addNewAuditTrailEntry().set(entry);
 			}
 		}
-		builder.save(new File(outFolder.getPath() + "/IGVGraphEventsMXML.mxml"));
+		builder.save(new File(outFolder.getPath() + "/"+fileName+"_CompilationEvents_IGV.mxml"));
 	}
 
 	private void generateIGVMXMLMethods() throws Exception {
@@ -144,7 +144,7 @@ public class IGVLogMiner extends LogMiner {
 			}
 //			break;
 		}
-		builder.save(new File(outFolder.getPath() + "/IGVMethodsMXML.mxml"));
+		builder.save(new File(outFolder.getPath() + "/"+fileName+"_Methods_IGV.mxml"));
 	}
 
 	@Override

@@ -9,6 +9,7 @@ import jvm.pm.tool.logs.logc.LogCompilationLogMiner;
 public abstract class LogMiner {
 
 	protected File inFile, outFolder;
+	protected String fileName;
 
 	public enum LogTypes {
 		C1Visualizer, IGV, LogCompilation, JP2
@@ -17,6 +18,7 @@ public abstract class LogMiner {
 	protected LogMiner(File inFile, File outFolder) {
 		this.inFile = inFile;
 		this.outFolder = outFolder;
+		fileName = inFile.getName().replaceFirst("[.][^.]+$", "");
 	}
 
 	public static LogMiner getInstance(LogTypes type, File inFile, File outFolder) {
